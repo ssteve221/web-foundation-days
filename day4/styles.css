@@ -1,0 +1,48 @@
+:root {
+  --bg: #ffffff;
+  --text: #222222;
+  --field-bg: #f5f5f5;
+  --border: #999999;
+  --button-bg: #e8e8e8;
+  --warning: orange;
+  --over: red;
+}
+
+body.dark {
+  --bg: #1e1e1e;
+  --text: #eeeeee;
+  --field-bg: #2c2c2c;
+  --border: #666666;
+  --button-bg: #3a3a3a;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: sans-serif;
+  padding: 1rem;
+}
+
+textarea {
+  background: var(--field-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 0.5rem;
+}
+
+button {
+  background: var(--button-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}
+
+.warning {
+  color: var(--warning);
+}
+
+.over {
+  color: var(--over);
+  font-weight: bold;
+}
